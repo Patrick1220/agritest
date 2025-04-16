@@ -7,10 +7,9 @@ public class Recommendation {
     private Priority priority;
 
     public enum Priority {
-        HIGH, MEDIUM, LOW
-    }
-
-    public Recommendation() {
+        HIGH,
+        MEDIUM,
+        LOW
     }
 
     public Recommendation(String id, String title, String description, Priority priority) {

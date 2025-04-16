@@ -8,28 +8,17 @@ public class WeatherData {
     private List<Recommendation> recommendations;
 
     public static class Current {
-        private double temperature;
+        private int temperature;
         private int humidity;
-        private double windSpeed;
+        private int windSpeed;
         private String condition;
-        private double rainfall;
+        private float rainfall;
 
-        public Current() {
-        }
-
-        public Current(double temperature, int humidity, double windSpeed, String condition, double rainfall) {
-            this.temperature = temperature;
-            this.humidity = humidity;
-            this.windSpeed = windSpeed;
-            this.condition = condition;
-            this.rainfall = rainfall;
-        }
-
-        public double getTemperature() {
+        public int getTemperature() {
             return temperature;
         }
 
-        public void setTemperature(double temperature) {
+        public void setTemperature(int temperature) {
             this.temperature = temperature;
         }
 
@@ -41,11 +30,11 @@ public class WeatherData {
             this.humidity = humidity;
         }
 
-        public double getWindSpeed() {
+        public int getWindSpeed() {
             return windSpeed;
         }
 
-        public void setWindSpeed(double windSpeed) {
+        public void setWindSpeed(int windSpeed) {
             this.windSpeed = windSpeed;
         }
 
@@ -57,30 +46,20 @@ public class WeatherData {
             this.condition = condition;
         }
 
-        public double getRainfall() {
+        public float getRainfall() {
             return rainfall;
         }
 
-        public void setRainfall(double rainfall) {
+        public void setRainfall(float rainfall) {
             this.rainfall = rainfall;
         }
     }
 
     public static class Forecast {
         private String day;
-        private double temperature;
+        private int temperature;
         private String condition;
-        private double rainfall;
-
-        public Forecast() {
-        }
-
-        public Forecast(String day, double temperature, String condition, double rainfall) {
-            this.day = day;
-            this.temperature = temperature;
-            this.condition = condition;
-            this.rainfall = rainfall;
-        }
+        private float rainfall;
 
         public String getDay() {
             return day;
@@ -90,11 +69,11 @@ public class WeatherData {
             this.day = day;
         }
 
-        public double getTemperature() {
+        public int getTemperature() {
             return temperature;
         }
 
-        public void setTemperature(double temperature) {
+        public void setTemperature(int temperature) {
             this.temperature = temperature;
         }
 
@@ -106,11 +85,11 @@ public class WeatherData {
             this.condition = condition;
         }
 
-        public double getRainfall() {
+        public float getRainfall() {
             return rainfall;
         }
 
-        public void setRainfall(double rainfall) {
+        public void setRainfall(float rainfall) {
             this.rainfall = rainfall;
         }
     }
